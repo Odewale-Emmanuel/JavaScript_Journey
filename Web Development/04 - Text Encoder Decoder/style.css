@@ -2,3 +2,17 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+div.box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+div.display-area {
+    max-width: 520px;
+    width: 100%;
+}
