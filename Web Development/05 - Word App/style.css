@@ -1,0 +1,10 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box {
+    width: 800px;
+    margin: auto;
+    height: 100%;
+}
