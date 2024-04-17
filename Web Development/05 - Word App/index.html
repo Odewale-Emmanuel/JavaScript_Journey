@@ -8,16 +8,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="p-0 m-0 bg-light">
     <div class="box">
         <textarea name="text-field" class="form-control p-3" id="text-field" cols="30" placeholder="type here..."
             rows="10"></textarea>
-        <div class="data-container py-3">
-            <span class="word-count me-3">Word: 0</span>
-            <span class="character-count me-3">Character: 0</span>
+        <div class="data-container d-flex py-3">
+            <span class="word-count me-3 fs-4">Word: 0</span>
+            <span class="character-count me-3 fs-4">Character: 0</span>
+            <button class="small btn btn-secondary lower-case me-3">abc</button>
+            <button class="small btn btn-primary upper-case me-3">ABC</button>
+            <i class="las fs-1 la-clipboard copy-to-clipboard"></i>
         </div>
+        <p class="info-text">&nbsp;</p>
 
     </div>
     <script src="./script.js"></script>
