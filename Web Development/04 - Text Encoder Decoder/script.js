@@ -26,6 +26,7 @@ function encodeDecode() {
     }
 
 }
+
 function copy() {
     navigator.clipboard.writeText(output.innerHTML)
         .then(() => {
