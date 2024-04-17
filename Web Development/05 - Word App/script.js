@@ -19,7 +19,7 @@ function countCHar() {
 
 function countWord() {
     const text = textField.value.split(" ");
-    const words = text.filter(element => element !== "").length;
+    const words = text.filter(element => element !== "" && element !== " ").length;
 
     if (words > 1) {
         wordCount.innerHTML = `Words: ${words}`;
