@@ -8,7 +8,7 @@ const countCHar = () => {
         charCount.innerHTML = `Characters: ${length}`;
     }
     else {
-        charCount.innerHTML = `Characters: ${length}`;
+        charCount.innerHTML = `Character: ${length}`;
     }
 }
 
