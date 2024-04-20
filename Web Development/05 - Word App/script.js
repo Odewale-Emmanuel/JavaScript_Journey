@@ -61,10 +61,10 @@ upperCase.addEventListener('click', () => {
     textField.value = textField.value.toUpperCase();
 })
 
-// capitalize - in observation for bug
+//  capitalize temporarily fixed but will need a better solution
 capitalize.addEventListener('click', () => {
     let wordArray = textField.value.split(" ");
-    let capitalizeCase = wordArray.map(word => word[0].toUpperCase() + word.slice(1, word.length).toLowerCase()).join(" ");
+    let capitalizeCase = wordArray.filter((element) => element.length > 0).map(word => word[0].toUpperCase() + word.slice(1, word.length).toLowerCase()).join(" ");
     textField.value = capitalizeCase;
 })
 
