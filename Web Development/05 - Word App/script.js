@@ -3,6 +3,7 @@ const wordCount = document.querySelector('span.word-count');
 const charCount = document.querySelector('span.character-count');
 const lowerCase = document.querySelector('button.lower-case');
 const upperCase = document.querySelector('button.upper-case');
+const capitalize = document.querySelector('button.capitalize');
 const copyToClipboard = document.querySelector('i.copy-to-clipboard');
 const infoText = document.querySelector('p.info-text');
 
@@ -58,6 +59,13 @@ lowerCase.addEventListener('click', () => {
 
 upperCase.addEventListener('click', () => {
     textField.value = textField.value.toUpperCase();
+})
+
+// capitalize - in observation for bug
+capitalize.addEventListener('click', () => {
+    let wordArray = textField.value.split(" ");
+    let capitalizeCase = wordArray.map(word => word[0].toUpperCase() + word.slice(1, word.length).toLowerCase()).join(" ");
+    textField.value = capitalizeCase;
 })
 
 copyToClipboard.addEventListener('click', copy);
